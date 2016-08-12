@@ -203,7 +203,10 @@ public class ParsePoloCsv {
 				position.setOnOrders(Double.parseDouble(positionArray[3]));
 				
 				// And finally the BTC value
-				position.setBtcValue(Double.parseDouble(positionArray[4]));		
+				position.setBtcValue(Double.parseDouble(positionArray[4]));	
+				
+				// Now we can calculate the implied price for each coin:
+				position.setImpliedPrice(position.getBtcValue() / position.getTotal());
 				
 				//And add the trade to the ArrayList
 				positions.add(position);

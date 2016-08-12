@@ -10,6 +10,7 @@ import org.hibernate.cfg.Configuration;
 import com.crypto.model.Position;
 import com.crypto.model.Trade;
 import com.crypto.util.ParsePoloCsv;
+import com.crypto.util.QueryPositions;
 import com.crypto.util.QueryTrades;
 
 public class MainApp {
@@ -60,7 +61,7 @@ public class MainApp {
 			// What else could we query for? Now that we have our positions imported,
 			// let's query for the total BTC value of the account:
 			
-			
+			QueryPositions.getAccountValue(sessionFactory);
 			
 			
 			

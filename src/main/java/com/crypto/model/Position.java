@@ -15,6 +15,7 @@ public class Position {
 	double total;
 	double onOrders;
 	double btcValue;
+	double impliedPrice;
 	
 	public int getId() {
 		return id;
@@ -51,6 +52,12 @@ public class Position {
 	}
 	public void setBtcValue(double btcValue) {
 		this.btcValue = btcValue;
+	}
+	public double getImpliedPrice() {
+		return impliedPrice;
+	}
+	public void setImpliedPrice(double impliedPrice) {
+		this.impliedPrice = impliedPrice;
 	}
 	
 	

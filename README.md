@@ -12,6 +12,7 @@ we daarom niet meer nodig, we parsen direct de .cvs en schrijven met behulp van 
 naar een MySql database
 * Een tweede tabel in de database bevat de huidige handelsposities. Werkt ook via een .cvs,
 maar dit bestand moeten we even zelf maken.
+* Rekent aan de hand van de posities prijzen van dat moment uit.
 
 ## Te bouwen functionaliteit
 
