@@ -27,6 +27,7 @@ public class Trade {
 	BigInteger orderNumber;
 	double baseTotalLessFee;
 	double quoteTotalLessFee;
+	
 	public LocalDateTime getDateTime() {
 		return dateTime;
 	}
